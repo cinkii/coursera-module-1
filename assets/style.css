@@ -7,3 +7,24 @@
     padding: 20px;
     border-radius: 15px;
 }
+
+.footer{
+    margin-top: 20px ;
+    padding: 20px 0px 20px 0px ;
+    background-color: rgba(128, 128, 128, 0.418);
+}
+
+.footers{
+    padding: 20px;
+}
+
+.card-hotel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hoteles{
+    text-align: center;
+    justify-content: center;
+}

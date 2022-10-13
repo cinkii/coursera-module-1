@@ -8,7 +8,9 @@
   <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
+  <!-- Jumbotron Seccion -->
   <div class="jumbotron text-center" id="jumbotron">
     <h1>Guia de Hoteles</h1>
     <p>Tu guia de hoteles favoritas !</p>
@@ -37,38 +39,64 @@
       <h1>Mejores Hoteles</h1>
       <p>Elige el mejor hotel dependiendo del pais al que quieras ir !</p>
     </div>
-    <div class="row text-center justify-content-center">
-      <div class="col-6 col-sm-4 m-lg-3">
-        <h3>Uruguay</h3>
-        <p>El Mejor Hotel de Uruguay es el hotel de Carrasco un Hotel de 5 estrellas el cual cuenta con una gran
-          variedad de servicios!</p>
-        <a href="https://www.booking.com/hotel/uy/sofitel-montevideo-casino-carrasco-amp-spa.es.html?aid=356938&label=metagha-link-LUUY-hotel-433813_dev-desktop_los-1_bw-8_dow-Friday_defdate-1_room-0_gstadt-2_rateid-0_aud-0_gacid-6642513102_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20221021__lp-2858_r-154548792052113713&sid=c4a695b0caa0930679bfccf210434d92&all_sr_blocks=43381302_214219727_2_2_0;checkin=2022-10-21;checkout=2022-10-22;dest_id=-907764;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=43381302_214219727_2_2_0;hpos=1;matching_block_id=43381302_214219727_2_2_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=43381302_214219727_2_2_0__24500;srepoch=1665684452;srpvid=975f7f71a0510544;type=total;ucfs=1&#hotelTmpl"
-          target="_blank" class="btn btn-secondary">Ver Mas</a>
+    <div class="row hoteles ">
+      <div class="col-6 col-sm-4 m-lg-3 card-hotel">
+        <div>
+          <h3>Uruguay</h3>
+          <p>El Mejor Hotel de Uruguay es el hotel de Carrasco un Hotel de 5 estrellas el cual cuenta con una gran
+            variedad de servicios!</p>
+        </div>
+        <div>
+          <a href="https://www.booking.com/hotel/uy/sofitel-montevideo-casino-carrasco-amp-spa.es.html?aid=356938&label=metagha-link-LUUY-hotel-433813_dev-desktop_los-1_bw-8_dow-Friday_defdate-1_room-0_gstadt-2_rateid-0_aud-0_gacid-6642513102_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20221021__lp-2858_r-154548792052113713&sid=c4a695b0caa0930679bfccf210434d92&all_sr_blocks=43381302_214219727_2_2_0;checkin=2022-10-21;checkout=2022-10-22;dest_id=-907764;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=43381302_214219727_2_2_0;hpos=1;matching_block_id=43381302_214219727_2_2_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=43381302_214219727_2_2_0__24500;srepoch=1665684452;srpvid=975f7f71a0510544;type=total;ucfs=1&#hotelTmpl"
+            target="_blank" class="btn btn-secondary">Ver Mas</a>
+        </div>
       </div>
-      <div class="col-6 col-sm-4 m-lg-3">
-        <h3>Argentina</h3>
-        <p>Uno de los mejores hoteles de argentina sin dudas es el hotel Puerto Iguazu es un hotel el cual tiene unas
-          hermosas vistas y cuenta con una gran variedad de servicios para ofrecerte.</p>
-        <a href="https://www.tripadvisor.com.ar/Hotel_Review-g312806-d1237910-Reviews-Loi_Suites_Iguazu_Hotel-Puerto_Iguazu_Province_of_Misiones_Litoral.html"
-          target="_blank" class="btn btn-secondary">Ver Mas</a>
+      <div class="col-6 col-sm-4 m-lg-3 card-hotel">
+        <div>
+          <h3>Argentina</h3>
+          <p>Uno de los mejores hoteles de argentina sin dudas es el hotel Puerto Iguazu es un hotel el cual tiene unas
+            hermosas vistas y cuenta con una gran variedad de servicios para ofrecerte.</p>
+        </div>
+        <div><a
+            href="https://www.tripadvisor.com.ar/Hotel_Review-g312806-d1237910-Reviews-Loi_Suites_Iguazu_Hotel-Puerto_Iguazu_Province_of_Misiones_Litoral.html"
+            target="_blank" class="btn btn-secondary">Ver Mas</a>
+        </div>
       </div>
-      <div class="col-6 col-sm-4 m-lg-3">
-        <h3>Mexico</h3>
-        <p>Si estas pensando en ir a cancun, este es tu hotel. El hotel Secrets Maroma sin duda es uno de los mejores
-          hoteles con los que cuenta Mexico, con una hermosa arquitectura y unas bellizimas vistas hacia el mar.</p>
-        <a href="" target="_blank" class="btn btn-secondary">Ver Mas</a>
+      <div class="col-6 col-sm-4 m-lg-3 card-hotel">
+        <div>
+          <h3>Mexico</h3>
+          <p>Si estas pensando en ir a cancun, este es tu hotel. El hotel Secrets Maroma sin duda es uno de los mejores
+            hoteles con los que cuenta Mexico, con una hermosa arquitectura y unas bellizimas vistas hacia el mar.</p>
+        </div>
+        <div>
+          <a href="" target="_blank" class="btn btn-secondary">Ver Mas</a>
+        </div>
       </div>
-      <div class="col-6 col-sm-4 m-lg-3">
-        <h3>Colombia</h3>
-        <p>El Grand Hyatt Bogota sin duda es uno de los mejores hoteles donde puedes hospedarte en Colombia, es un hotel
-          hermoso de 5 estrellas ubicado en la bellizima ciudad de bogota.</p>
-        <a href="" target="_blank" class="btn btn-secondary">Ver Mas</a>
+      <div class="col-6 col-sm-4 m-lg-3 card-hotel">
+        <div>
+          <h3>Colombia</h3>
+          <p>El Grand Hyatt Bogota sin duda es uno de los mejores hoteles donde puedes hospedarte en Colombia, es un
+            hotel
+            hermoso de 5 estrellas ubicado en la bellizima ciudad de bogota.</p>
+        </div>
+        <div>
+          <a href="" target="_blank" class="btn btn-secondary">Ver Mas</a>
+        </div>
       </div>
     </div>
-    <!-- Otra linea de columnas -->
-
-    <!-- Otra linea de columnas -->
-  </div>>
+    <!-- Footer Seccion -->
+  </div>
+  <div class="footer d-flex justify-content-between">
+    <div class="footer-first footers">
+      <a href="#">Contactanos</a>
+      <p>+598-45734</p>
+      <a href="#">Redes Sociales</a>
+    </div>
+    <div class="footer-second footers">
+      <p>@En la industria desde 2004</p>
+      <p>Created by Francisco Lencina</p>
+    </div>
+  </div>
   </div>
   <script src="./node_modules//jquery/dist/jquery.min.js"></script>
   <script src="./node_modules/popper.js/dist/popper.min.js"></script>
