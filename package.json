@@ -1,0 +1,23 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto de Node JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://cinkii@bitbucket.org/cinkii/guia-hoteles.git"
+  },
+  "author": "Francisco Lencina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/cinkii/guia-hoteles/issues"
+  },
+  "homepage": "https://bitbucket.org/cinkii/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
