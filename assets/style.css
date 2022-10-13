@@ -1,0 +1,9 @@
+#jumbotron{
+    background-color: rgba(128, 128, 128, 0.418);
+    padding: 20px;
+}
+#jumbotron2{
+    background-color: rgba(128, 128, 128, 0.418);
+    padding: 20px;
+    border-radius: 15px;
+}
