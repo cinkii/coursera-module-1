@@ -1,6 +1,7 @@
 #jumbotron{
     background-color: rgba(128, 128, 128, 0.418);
     padding: 20px;
+    margin-top: 50px;
 }
 #jumbotron2{
     background-color: rgba(128, 128, 128, 0.418);
@@ -12,6 +13,7 @@
     margin-top: 20px ;
     padding: 20px 0px 20px 0px ;
     background-color: rgba(128, 128, 128, 0.418);
+
 }
 
 .footers{
@@ -27,4 +29,18 @@
 .hoteles{
     text-align: center;
     justify-content: center;
+}
+
+.breadcrumb{
+    background-color: #CACACA;
+}
+
+.breadcrumb a{
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumb-item.active{
+ color: white;
+ font-weight: bold;
 }
