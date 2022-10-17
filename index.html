@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Guia Hoteles</title>
   <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Remplaze la libreria de openiconics que utiliza el profe por ionicons porque no pude encontrarla pero es lo mismo -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <link rel="stylesheet" href="./assets/style.css">
 </head>
-
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-light justify-content-center fixed-top">
@@ -62,21 +63,21 @@
       <p>Elige el mejor hotel dependiendo del pais al que quieras ir !</p>
     </div>
     <div class="row hoteles ">
-      <div class=" card col-6 col-sm-4 m-lg-3 card-hotel">
+      <div class="card col-6 col-sm-4 m-lg-3 card-hotel ">
         <div class="card-body">
-          <h3 class="title">Uruguay</h3>
-          <h5 class="card-subtitle text-muted">Montevideo</h5>
+          <h3 class="card-title">Uruguay</h3>
+          <h5 class="card-subtitle text-muted">
+            Montevideo
+          </h5>
           <img class="card-img-top" src="./assets//imgs/uruguay.jpg" alt="">
-          <p class="card-text">El Mejor Hotel de Uruguay es el hotel de Carrasco un Hotel de 5 estrellas el cual cuenta
-            con una gran
-            variedad de servicios!</p>
+          <p class="card-text">El Hotel de Carrasco sin duda es uno de los mejores hoteles para hospedarte en Uruguay, es un hotel hermoso de 5 estrellas ubicado en la bellizima ciudad de Montevideo.</p>
         </div>
-        <div>
-          <a href="https://www.booking.com/hotel/uy/sofitel-montevideo-casino-carrasco-amp-spa.es.html?aid=356938&label=metagha-link-LUUY-hotel-433813_dev-desktop_los-1_bw-8_dow-Friday_defdate-1_room-0_gstadt-2_rateid-0_aud-0_gacid-6642513102_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20221021__lp-2858_r-154548792052113713&sid=c4a695b0caa0930679bfccf210434d92&all_sr_blocks=43381302_214219727_2_2_0;checkin=2022-10-21;checkout=2022-10-22;dest_id=-907764;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=43381302_214219727_2_2_0;hpos=1;matching_block_id=43381302_214219727_2_2_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=43381302_214219727_2_2_0__24500;srepoch=1665684452;srpvid=975f7f71a0510544;type=total;ucfs=1&#hotelTmpl"
+        <div><a
+            href="https://www.tripadvisor.com.ar/Hotel_Review-g312806-d1237910-Reviews-Loi_Suites_Iguazu_Hotel-Puerto_Iguazu_Province_of_Misiones_Litoral.html"
             target="_blank" class="btn btn-secondary w-100">Ver Mas</a>
         </div>
       </div>
-      <div class="card col-6 col-sm-4 card-hotel">
+      <div class="card col-6 col-sm-4 m-lg-3 card-hotel">
         <div class="card-body">
           <h3 class="card-title">Argentina</h3>
           <h5 class="card-subtitle text-muted">
@@ -140,5 +141,4 @@
   <script src="./node_modules/popper.js/dist/popper.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
-
 </html>
