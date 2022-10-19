@@ -1,20 +1,32 @@
 #jumbotron{
-    background-color: rgba(128, 128, 128, 0.418);
+    background-color: #0D6EFD;
     padding: 20px;
-    margin-top: 50px;
+    height: 250px;
+    margin-top: 70px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 #jumbotron2{
-    background-color: rgba(128, 128, 128, 0.418);
+    background-color: #0D6EFD;
     padding: 20px;
     border-radius: 15px;
+    color: white;
 }
 
 .footer{
     margin-top: 20px ;
     padding: 20px 0px 20px 0px ;
-    background-color: rgba(128, 128, 128, 0.418);
-
+    background-color: #0D6EFD;
+    color: white;
 }
+
+.footer a{
+    text-decoration: none;
+     color: white;
+}
+
 
 .footers{
     padding: 20px;
@@ -32,7 +44,7 @@
 }
 
 .breadcrumb{
-    background-color: #CACACA;
+    background-color: #0D6EFD;
 }
 
 .breadcrumb a{
