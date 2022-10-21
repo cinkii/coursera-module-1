@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "lite-server",
-    "scss": "node-sass -o ./assets/ ./assets/"
+    "start": "concurrently \" npm run watch:scss \" \" npm run dev \" ",
+    "scss": "node-sass -o ./assets/ ./assets/",
+    "watch:scss": "onchange './assets/*.scss' -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin ./assets/imgs/* --out-dir dist/imgs",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin other.html -d dist --htmlmin -o dist/other.html && usemin prices.html -d dist --htmlmin -o dist/prices.html"
   },
   "repository": {
     "type": "git",
@@ -20,11 +25,14 @@
   "homepage": "https://bitbucket.org/cinkii/guia-hoteles#readme",
   "devDependencies": {
     "lite-server": "^2.6.1",
-    "node-sass": "^7.0.3"
+    "node-sass": "^7.0.3",
+    "onchange": "^7.1.0",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.2",
+    "concurrently": "^7.4.0",
     "jquery": "^3.6.1",
     "popper.js": "^1.16.1"
   }
