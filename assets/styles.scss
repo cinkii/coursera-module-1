@@ -1,5 +1,10 @@
+$yellow: #ebd834;
+$blue: #0D6EFD;
+$red: #c41238 ;
+$green: #32a852;
+
 #jumbotron{
-    background-color: #0D6EFD;
+    background-color: $blue;
     padding: 20px;
     height: 250px;
     margin-top: 70px;
@@ -9,7 +14,7 @@
     flex-direction: column;
 }
 #jumbotron2{
-    background-color: #0D6EFD;
+    background-color: $blue;
     padding: 20px;
     border-radius: 15px;
     color: white;
@@ -18,7 +23,7 @@
 .footer{
     margin-top: 20px ;
     padding: 20px 0px 20px 0px ;
-    background-color: #0D6EFD;
+    background-color: $blue;
     color: white;
 }
 
