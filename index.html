@@ -93,7 +93,7 @@
         </div>
         <div>
           <!-- Hoteles para elegir -->
-          <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" id="uyreservar" data-bs-target="#uruguay">Reservar</button>
+          <button type="button" class="btn btn-primary mb-3 reservarBtn" data-bs-toggle="modal" id="uyreservar" data-bs-target="#uruguay">Reservar</button>
         </div>
       </div>
       <div class="card col-6 col-sm-4 m-lg-3 card-hotel">
@@ -107,7 +107,7 @@
             el cual tiene unas
             hermosas vistas y cuenta con una gran variedad de servicios para ofrecerte.</p>
         </div>
-        <div><button type="button" class="btn btn-primary mb-3" id="reservar" data-bs-toggle="modal" data-bs-target="#argentina">Reservar</button>
+        <div><button type="button" class="btn btn-primary mb-3 reservarBtn" id="reservar" data-bs-toggle="modal" data-bs-target="#argentina">Reservar</button>
         </div>
       </div>
       <div class="card col-6 col-sm-4 m-lg-3 card-hotel">
@@ -120,7 +120,7 @@
             hoteles con los que cuenta Mexico, con una hermosa arquitectura y unas bellizimas vistas hacia el mar.</p>
         </div>
         <div>
-          <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#mexico">Reservar</button>
+          <button type="button" class="btn btn-primary mb-3 reservarBtn" data-bs-toggle="modal" data-bs-target="#mexico">Reservar</button>
         </div>
       </div>
       <div class="card col-6 col-sm-4 m-lg-3 card-hotel">
@@ -134,7 +134,7 @@
             hermoso de 5 estrellas ubicado en la bellizima ciudad de bogota.</p>
         </div>
         <div>
-          <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#colombia">Reservar</button>
+          <button type="button" class="btn btn-primary mb-3 reservarBtn" data-bs-toggle="modal" data-bs-target="#colombia">Reservar</button>
         </div>
       </div>
     </div>
@@ -155,7 +155,7 @@
     </div>
   </footer>
   <!-- Modal -->
-<div class="modal fade" id="uruguay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade paises" id="uruguay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -207,7 +207,7 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="argentina" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade paises" id="argentina" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -259,7 +259,7 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="mexico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade paises" id="mexico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -311,7 +311,7 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="colombia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade paises" id="colombia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -369,33 +369,7 @@
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script>
-    $(function(){
-      $("[data-toggle='tooltip']").tooltip();
-      $("[data-toggle='popover']").popover();
-    });
-
-    $("#uruguay").on('show.bs.modal', function(e){
-        console.log('Se muestra el modal');
-        $( "#uyreservar" ).prop('disabled', true);
-        $( "#uyreservar" ).removeClass('btn-primary').addClass('btn-danger');
-      });
-      
-      $("#uruguay").on('shown.bs.modal', function(e){
-        console.log('Se mostró el modal');
-      });
-
-      $("#uruguay").on('hide.bs.modal', function(e){
-        console.log('Se cierra el modal');
-        $( "#uyreservar" ).removeClass('btn-danger').addClass('btn-primary');
-        $( "#uyreservar" ).prop('disabled', false);
-      });
-
-      $("#uruguay").on('hidden.bs.modal', function(e){
-        console.log('Se cerró el modal');
-      });
-
-  </script>
+  <script src="./js/index.js"></script>
  <!-- endbuild -->
 </body>
 <script>

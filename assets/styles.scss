@@ -1,11 +1,20 @@
 $yellow: #ebd834;
 $blue: #0D6EFD;
 $red: #c41238 ;
-$green: #32a852;
+$green: #33af54;
+
+@mixin ypadding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @mixin xypadding {
+    padding: 20px;
+  }
 
 #jumbotron{
     background-color: $blue;
-    padding: 20px;
+    @include xypadding;
     height: 250px;
     margin-top: 70px;
     color: white;
@@ -22,7 +31,7 @@ $green: #32a852;
 
 .footer{
     margin-top: 20px ;
-    padding: 20px 0px 20px 0px ;
+    @include ypadding;
     background-color: $blue;
     color: white;
 }
@@ -34,7 +43,7 @@ $green: #32a852;
 
 
 .footers{
-    padding: 20px;
+    @include xypadding;
 }
 
 .card-hotel{

@@ -24,6 +24,8 @@
   },
   "homepage": "https://bitbucket.org/cinkii/guia-hoteles#readme",
   "devDependencies": {
+    "grunt": "^1.5.3",
+    "grunt-contrib-sass": "^2.0.0",
     "lite-server": "^2.6.1",
     "node-sass": "^7.0.3",
     "onchange": "^7.1.0",
